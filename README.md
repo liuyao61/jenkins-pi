@@ -10,7 +10,7 @@ docker create -v /var/jenkins_home --name jenkins_data resin/armv7hf-debian /bin
 # run container with the volume
 
 ``
-docker run -p 8080:8080 --volumes-from jenkins_data --name jenkins_sia -d joherma1/rpi-jenkins
+docker run -p 8080:8080 --volumes-from jenkins_data --name jenkins -d yaoliu/jenkins
 ``
 
 
